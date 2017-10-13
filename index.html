@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="main.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js"
+                integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+                crossorigin="anonymous"></script>
+        
+        <script src="deck.js"></script>
+        <script src="cardTranslator.js"></script>
+        
+	</head>
+	<body>
+        <div class="header">
+            <div id="logo">
+                <img src="assets/logo.png" alt="Sooth Sayings" class="logo">
+            </div>
+            <div class="aside"><h2>"Make your own nature, not the advice of others, your guide in life"</h2></div>
+        </div>
+        <div class="main">
+            <div class="focuser">
+                <div class="breath">
+                    <h1>Take three deep breaths.</h1>
+                </div>
+                <div class="focuserBlurb">
+                    <h2>Consider your life for a moment.<br> All of the Chaos; all of the Order. <br><strong>The routines, people, setbacks, surprises.</strong> <br>Think of the JOY. Think of the SORROW.<br> Recall <em>certain events</em>.<br> Perhaps from ages ago or just moments earlier. <br><em>Even ones that may yet come to pass.</em><br> Once your thoughts are focused, <br>shuffle the deck and draw your cards.</h2>
+                </div>
+            </div>
+            <div class="controller">
+                <ul>
+                    <li>
+                        <button onclick="deck.newDeck()">Shuffle Deck</button>
+                    </li>
+<!--                <button onclick="deck.showDeck()">Show Deck</button>-->
+                    <li>
+                        <button onclick="deck.drawCard()">Draw Card</button>
+                    </li>
+                    <li>
+                        <button onclick="deck.clearCards()">Clear</button>
+                    </li>
+                </ul>
+                <br>
+                <button onclick="translateCards()" id="translate">Translate</button>
+            </div>
+            <div class="cards">
+                <div class="container">
+                    <img class= "card" id="card1">
+                    <div class="container" id="translations1">
+                        <select class="translationSelect" id="translation1R"></select>
+                        <select class="translationSelect" id="translation1S"></select>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class= "card" id="card2">
+                    <div class="container" id="translations2">
+                        <select class="translationSelect" id="translation2R"></select>
+                        <select class="translationSelect" id="translation2S"></select>
+                    </div>
+                </div>
+                <div class="container">
+                    <img class= "card" id="card3">
+                    <div class="container" id="translations3">
+                        <select class="translationSelect" id="translation3R"></select>
+                        <select class="translationSelect" id="translation3S"></select>
+                    </div>
+                </div>
+            </div>
+<!--
+            <div class="translations">
+                <select class="translationSelect" id="translation1R"></select> 
+                <select class="translationSelect" id="translation1S"></select>
+                <select class="translationSelect" id="translation2R"></select>
+                <select class="translationSelect" id="translation2S"></select>
+                <select class="translationSelect" id="translation3R"></select>
+                <select class="translationSelect" id="translation3S"></select>
+                
+            </div>
+-->
+        </div>
+    </body>
+</html>

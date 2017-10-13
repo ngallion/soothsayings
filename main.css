@@ -1,0 +1,254 @@
+html, body, h1, h2, h3, h4, p, div, ul, ol, li{
+	padding: 0;
+	border: 0;
+	margin: 0;
+	font-size: 16px;
+	font: inherit;
+}
+body{
+    background-color: ghostwhite;
+    background:
+        url(assets/hubble.jpg) top center,
+        url(assets/hubble.jpg) bottom center;
+    background-size: 100%;
+    font-size: 62.5%;
+    background-attachment: fixed;
+}
+.header{
+	padding-top: 50px;
+	padding-bottom: 20px;
+	/*background-color: #44aacc;*/
+    background: linear-gradient(to bottom, #44aacc, rgb(25 68 81 .5));
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+    width: 100%;
+    display: inline-block;
+}
+.tagline{
+    padding-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+.main{
+    background: #C0C0C0;
+    border-radius: 15px;
+    padding: 25px 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 2px 2px #000;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+    border-top: 2px white;
+}
+
+h1{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 7em;
+    max-width: .8;
+	font-weight: bold;
+	text-align: center;
+    line-height: 100%;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.aside h2, .focuserBlurb h2{
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 3em;
+	font-weight: 100;
+	text-align: center;
+	color: white;
+}
+h3{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 2em;
+	font-weight: 100;
+	text-align: center;
+	color: white;
+}
+#logo {
+    width: 100%;
+}
+.focuserBlurb{
+    margin: 20px auto;
+    text-align: center;
+}
+.focuserBlurb h2{
+    line-height: 170%;
+}
+.thoughts{
+    margin: 30px auto;
+    height: 150px;
+    width: 60%;
+    
+}
+.controller{
+    text-align: center;
+    margin: 50px 0px;
+}
+button{
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: white;
+    border-radius: 6px;
+    width: 15%;
+    height: 4em;
+    transition-duration: 0.8s;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.controller li{
+    display: inline;
+    padding: 2em;
+}
+.translations{
+    margin: 0 auto;
+    text-align: center;
+}
+.translations select{
+    display: inline-block;
+    width: 20%;
+}
+.translations div{
+    margin: 0 auto;
+    display: inline-block;
+}
+#translate{
+    text-align: center;
+    width: 60%;
+}
+img{
+    transition-duration: 0.8s;
+}
+/*
+img:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+*/
+
+.container:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+img.logo {
+    width: 100%;
+}
+
+.translationSelect {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 1.4em;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img.card {
+    margin: 20px auto;
+    width: 100%;
+    border-radius: 60px;
+    display: inline;
+}
+
+#translations1, #translations2, #translations3 {
+    visibility: hidden;
+    width: 100%;
+}
+
+.focuser {
+    margin: 20px;
+}
+
+.breath {
+    margin: 20px auto 50px auto;
+    width: 90%;
+    height: auto;
+    -webkit-animation: breathing 12s ease-out infinite normal;
+    animation: breathing 12s ease-out infinite normal;
+}
+
+
+.cards {
+    border: 1px;
+    display: inline;
+    align-content: center;
+    width: 100%;
+    margin: 0px auto;
+}
+
+
+.container {
+    width: 32%;
+    display: inline-block;
+    transition-duration: 2s;
+    border-radius: 10px;
+}
+/* webkit */
+@-webkit-keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes breathing {
+  0% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  25% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+
+  100% {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+
+/*media queries*/
+
+@media screen and (max-width: 400px){
+    .container{
+        width: inherit;
+        float: none;
+    }
+    h1{
+        font-size: 2.6em;
+    }
+    .focuserBlurb h2{
+        font-size: 1.8em;
+    }
+}
